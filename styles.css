@@ -181,7 +181,7 @@ nav {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: url(/banner.jpg);
+    background: url(banner.jpg);
     background-size: cover;
     background-position: center;
     color: white;
