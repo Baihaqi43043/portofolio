@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baihaqi | Programmer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -31,12 +36,36 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
+                <span class="hero-badge"><i class="fas fa-code"></i> Web Developer</span>
                 <h1>Halo, Saya <span class="highlight">Baihaqi</span></h1>
-                <h2>Web Developer</h2>
-                <p>Web development dan problem solving</p>
+                <p>Web development dan problem solving — membangun solusi digital yang bersih, efisien, dan mudah
+                    digunakan.</p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn primary-btn">Lihat Karya</a>
                     <a href="#contact" class="btn secondary-btn">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-target="2">0</span><span class="stat-suffix">+</span>
+                        <p>Tahun Pengalaman</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-folder-open"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-target="6">0</span><span class="stat-suffix">+</span>
+                        <p>Proyek Selesai</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-tools"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-target="9">0</span><span class="stat-suffix">+</span>
+                        <p>Teknologi</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,29 +73,38 @@
 
     <section id="about" class="about">
         <div class="container">
+            <span class="section-label">Siapa Saya</span>
             <h2 class="section-title">Tentang Saya</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="baihaqi2.jpg" alt="Profile picture">
+                    <img src="baihaqi.jpeg" alt="Profile picture">
                 </div>
                 <div class="about-text">
-                    <p>Saya adalah seorang programmer dengan pengalaman dalam pengembangan aplikasi web. Dengan latar belakang dalam pengembangan sistem manajemen rumah sakit, saya terbiasa bekerja dalam lingkungan yang cepat berubah dan mengikuti tren teknologi terbaru.</p>
-                    <p>Saya memiliki keahlian dalam problem solving dan selalu mencari cara efisien untuk menyelesaikan tantangan teknis. Pendekatan saya dalam pengembangan software berfokus pada kode yang bersih, terstruktur, dan mudah dimaintain.</p>
+                    <p>Saya adalah seorang programmer dengan pengalaman dalam pengembangan aplikasi web. Dengan latar
+                        belakang dalam pengembangan sistem manajemen rumah sakit, saya terbiasa bekerja dalam lingkungan
+                        yang cepat berubah dan mengikuti tren teknologi terbaru.</p>
+                    <p>Saya memiliki keahlian dalam problem solving dan selalu mencari cara efisien untuk menyelesaikan
+                        tantangan teknis. Pendekatan saya dalam pengembangan software berfokus pada kode yang bersih,
+                        terstruktur, dan mudah dimaintain.</p>
                     <div class="about-details">
                         <div class="detail-item">
-                            <i class="fas fa-graduation-cap"></i>
+                            <div class="detail-icon"><i class="fas fa-graduation-cap"></i></div>
                             <div>
                                 <h3>Pendidikan</h3>
                                 <p>D4 Teknik Informatika - Politeknik Negeri Lhokseumawe</p>
                             </div>
                         </div>
                         <div class="detail-item">
-                            <i class="fas fa-briefcase"></i>
+                            <div class="detail-icon"><i class="fas fa-briefcase"></i></div>
                             <div>
                                 <h3>Pengalaman</h3>
                                 <p>Web developer Pengembangan sistem manajemen rumah sakit</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="about-actions">
+                        <a href="#projects" class="btn primary-btn">Lihat Proyek</a>
+                        <a href="#" class="btn secondary-btn" download><i class="fas fa-download"></i> Download CV</a>
                     </div>
                 </div>
             </div>
@@ -75,25 +113,38 @@
 
     <section id="skills" class="skills">
         <div class="container">
+            <span class="section-label">Kemampuan</span>
             <h2 class="section-title">Skills</h2>
             <div class="skills-content">
                 <div class="skill-category">
-                    <h3>Programming Languages</h3>
+                    <div class="skill-category-header">
+                        <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+                        <h3>Programming Languages</h3>
+                    </div>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span>PHP</span>
+                            <div class="skill-label">
+                                <span>PHP</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-level" style="width: 90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>Java</span>
+                            <div class="skill-label">
+                                <span>Java</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-level" style="width: 85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>Mysql</span>
+                            <div class="skill-label">
+                                <span>MySQL</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-level" style="width: 75%"></div>
                             </div>
@@ -101,22 +152,34 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Web Technologies</h3>
+                    <div class="skill-category-header">
+                        <div class="skill-cat-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Web Technologies</h3>
+                    </div>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span>HTML/CSS</span>
+                            <div class="skill-label">
+                                <span>HTML/CSS</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-level" style="width: 95%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>Laravel</span>
+                            <div class="skill-label">
+                                <span>Laravel</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-level" style="width: 80%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>Flutter</span>
+                            <div class="skill-label">
+                                <span>Flutter</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-level" style="width: 85%"></div>
                             </div>
@@ -124,24 +187,45 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Others</h3>
+                    <div class="skill-category-header">
+                        <div class="skill-cat-icon"><i class="fas fa-wrench"></i></div>
+                        <h3>Tools & Others</h3>
+                    </div>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span>Git</span>
+                            <div class="skill-label">
+                                <span>Git</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-level" style="width: 90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>Vscode</span>
+                            <div class="skill-label">
+                                <span>VSCode</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-level" style="width: 70%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>Navicat</span>
+                            <div class="skill-label">
+                                <span>Navicat</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-label">
+                                <span>Redis</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
                             </div>
                         </div>
                     </div>
@@ -152,59 +236,78 @@
 
     <section id="projects" class="projects">
         <div class="container">
+            <span class="section-label">Portofolio</span>
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="simrs.png" alt="Project 1">
+                        <img src="simrs.png" alt="Sistem Manajemen Rumah Sakit">
                     </div>
                     <div class="project-info">
-                        <h3>Sistem manajemen rumah sakit</h3>
-                        <p>Bekerja di bagian devisi web developer dengan pengalaman 2 tahun.</p>
+                        <h3>Sistem Manajemen Rumah Sakit</h3>
+                        <p>Bekerja di bagian divisi web developer dengan pengalaman 2 tahun dalam pengembangan sistem
+                            informasi rumah sakit.</p>
                         <div class="project-tech">
                             <span>Laravel</span>
-                            <span>Mysql</span>
-                            <span>redis</span>
+                            <span>MySQL</span>
+                            <span>Redis</span>
                         </div>
-                        <!-- <div class="project-links">
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
-                        </div> -->
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="tambak.png" alt="Project 2">
+                        <img src="tambak.png" alt="Sistem Manajemen Tambak">
                     </div>
                     <div class="project-info">
-                        <h3>Sistem manajemen tambak</h3>
-                        <p>Website ini dapat mengelola seluruh rekapan pengeluaran dan pemasukan dari tambak
-                            udang yang beroperasi di desa panggoi kota lhokseumawe.</p>
+                        <h3>Sistem Manajemen Tambak</h3>
+                        <p>Website yang mengelola seluruh rekapan pengeluaran dan pemasukan dari tambak udang yang
+                            beroperasi di desa Panggoi, Lhokseumawe.</p>
                         <div class="project-tech">
                             <span>Laravel</span>
-                            <span>Mysql</span>
+                            <span>MySQL</span>
                             <span>Admin LTE</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Baihaqi43043/sistem-tambak" target="_blank"><i class="fab fa-github"></i> Code</a>
-                            <!-- <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a> -->
+                            <a href="https://github.com/Baihaqi43043/sistem-tambak" target="_blank" class="btn-link"><i
+                                    class="fab fa-github"></i> Source Code</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="java.jpeg" alt="Project 3">
+                        <img src="java.jpeg" alt="Sistem Manajemen Penjualan HP">
                     </div>
                     <div class="project-info">
-                        <h3>Sistem manajemen penjualan HP</h3>
-                        <p>Sofware ini dibangun menggunakan Neatbeen menggunakan bahasa pemograman java. Mengelola data karyawan dan pelaporan penjualan</p>
+                        <h3>Sistem Manajemen Penjualan HP</h3>
+                        <p>Software yang dibangun menggunakan NetBeans dengan bahasa pemrograman Java. Mengelola data
+                            karyawan dan pelaporan penjualan.</p>
                         <div class="project-tech">
-                            <span>java</span>
-                            <span>Neatbeen</span>
-                            <span>mysql</span>
+                            <span>Java</span>
+                            <span>NetBeans</span>
+                            <span>MySQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Baihaqi43043/projek_java_tokoHP" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://github.com/Baihaqi43043/projek_java_tokoHP" target="_blank"
+                                class="btn-link"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="pos.png" alt="POS Vape Store">
+                    </div>
+                    <div class="project-info">
+                        <h3>POS Vape Store</h3>
+                        <p>Sistem Point of Sale untuk toko vape yang mencakup manajemen produk, transaksi penjualan, dan
+                            laporan keuangan secara real-time.</p>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TajulMunandar/Pos-VapeStore" target="_blank" class="btn-link"><i
+                                    class="fab fa-github"></i> Source Code</a>
                         </div>
                     </div>
                 </div>
@@ -214,32 +317,35 @@
 
     <section id="contact" class="contact">
         <div class="container">
+            <span class="section-label">Hubungi</span>
             <h2 class="section-title">Hubungi Saya</h2>
             <div class="contact-content">
                 <div class="contact-info">
+                    <p class="contact-intro">Punya proyek atau ingin berdiskusi? Jangan ragu untuk menghubungi saya.</p>
                     <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                         <div>
                             <h3>Email</h3>
                             <p>baihaqi43043@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
                         <div>
-                            <h3>Phone</h3>
+                            <h3>WhatsApp</h3>
                             <p>082288565525</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div>
-                            <h3>Location</h3>
+                            <h3>Lokasi</h3>
                             <p>Lhokseumawe, Aceh, Indonesia</p>
                         </div>
                     </div>
                     <div class="contact-social">
-                        <a href="https://github.com/Baihaqi43043" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/Baihaqi43043" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="contact-form">
@@ -256,7 +362,8 @@
                         <div class="form-group">
                             <textarea id="message" placeholder="Pesan Anda" required></textarea>
                         </div>
-                        <button type="submit" class="btn primary-btn">Kirim via WhatsApp</button>
+                        <button type="submit" class="btn primary-btn"><i class="fab fa-whatsapp"></i> Kirim via
+                            WhatsApp</button>
                     </form>
                 </div>
             </div>
@@ -265,10 +372,21 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Baihaqi. All Rights Reserved.</p>
+            <div class="footer-content">
+                <div class="footer-logo">BAIHAQI</div>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <p class="footer-copy">&copy; 2025 Baihaqi. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
